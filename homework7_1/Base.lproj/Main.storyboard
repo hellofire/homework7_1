@@ -1,14 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12106.1" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12074.1"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="homework7_1" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +21,56 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo1" translatesAutoresizingMaskIntoConstraints="NO" id="xD4-dP-PAU">
+                                <rect key="frame" x="20" y="70" width="100" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="3Eg-tq-syN"/>
+                                    <constraint firstAttribute="width" secondItem="xD4-dP-PAU" secondAttribute="height" multiplier="1:2" id="3Qt-K3-1hV"/>
+                                    <constraint firstAttribute="width" constant="100" id="omp-RN-PHM"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo3" translatesAutoresizingMaskIntoConstraints="NO" id="e7v-6S-x8a">
+                                <rect key="frame" x="240" y="70" width="100" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="bta-6F-tKB"/>
+                                    <constraint firstAttribute="width" secondItem="e7v-6S-x8a" secondAttribute="height" multiplier="1:2" id="svk-GC-vl9"/>
+                                    <constraint firstAttribute="height" constant="200" id="yS3-AV-9jn"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo2" translatesAutoresizingMaskIntoConstraints="NO" id="RVA-JS-HJW">
+                                <rect key="frame" x="130" y="70" width="100" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="Dop-Uk-Uxp"/>
+                                    <constraint firstAttribute="width" secondItem="RVA-JS-HJW" secondAttribute="height" multiplier="1:2" id="bXa-4f-Tgw"/>
+                                    <constraint firstAttribute="width" constant="100" id="jsK-cG-cKF"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="e7v-6S-x8a" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="2wV-9q-y2e"/>
+                            <constraint firstAttribute="trailing" secondItem="e7v-6S-x8a" secondAttribute="trailing" constant="20" id="5P0-Nw-cfQ"/>
+                            <constraint firstItem="e7v-6S-x8a" firstAttribute="leading" secondItem="RVA-JS-HJW" secondAttribute="trailing" constant="10" id="6YL-zL-how"/>
+                            <constraint firstItem="RVA-JS-HJW" firstAttribute="leading" secondItem="xD4-dP-PAU" secondAttribute="trailing" constant="10" id="GXQ-QY-K6p"/>
+                            <constraint firstItem="xD4-dP-PAU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="QDr-7M-wQ5"/>
+                            <constraint firstItem="RVA-JS-HJW" firstAttribute="width" secondItem="e7v-6S-x8a" secondAttribute="width" id="bJl-0f-Dbe"/>
+                            <constraint firstItem="xD4-dP-PAU" firstAttribute="width" secondItem="RVA-JS-HJW" secondAttribute="width" id="h0Z-jK-FLF"/>
+                            <constraint firstItem="RVA-JS-HJW" firstAttribute="leading" secondItem="xD4-dP-PAU" secondAttribute="trailing" constant="10" id="hSh-R7-xq2"/>
+                            <constraint firstItem="e7v-6S-x8a" firstAttribute="leading" secondItem="RVA-JS-HJW" secondAttribute="trailing" constant="10" id="ocS-Fa-gSN"/>
+                            <constraint firstItem="xD4-dP-PAU" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="tIg-pV-fE8"/>
+                            <constraint firstItem="RVA-JS-HJW" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="xCz-3k-cmg"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="photo1" width="1494" height="2000"/>
+        <image name="photo2" width="1331" height="2000"/>
+        <image name="photo3" width="1331" height="2000"/>
+    </resources>
 </document>
